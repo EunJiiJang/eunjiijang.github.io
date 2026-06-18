@@ -1,7 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code2, Sparkles, Calendar, ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router';
+import { Twitter } from 'lucide-react';
 import { Experience } from '@/app/components/Experience';
+import { PhotoCardCarousel } from '@/app/components/PhotoCardCarousel';
 
 export function Hero() {
   return (
@@ -47,19 +47,31 @@ export function Hero() {
           {/* Right side - Bento grid */}
           <div className="flex flex-col gap-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 shrink-0">
-            {/* Code card */}
-            <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl p-4 sm:p-6 flex items-center justify-center aspect-square">
-              <Code2 size={48} className="text-white" />
+            {/* Twitter card */}
+            <div className="bg-[#f7f7f9] rounded-3xl p-5 sm:p-6 aspect-square">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-sm font-semibold">HG</span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-gray-900">Eunji Jang</span>
+                    <Twitter size={20} className="text-blue-400" />
+                  </div>
+                  <span className="text-gray-500 text-sm">@eunjijang</span>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                prev <br /> @ibank
+                <br /> @innisfree global
+                <br /> @aestura
+                <br /> @creatz
+                <br /> @qed
+                <br />
+              </p>
             </div>
 
-            {/* Status card */}
-            <div className="bg-[#f7f7f9] rounded-3xl p-4 sm:p-6 flex flex-col justify-between aspect-square">
-              <Sparkles size={32} className="text-yellow-500" />
-              <div>
-                <p className="text-sm text-gray-500">Currently</p>
-                <p className="font-semibold text-gray-900">Available</p>
-              </div>
-            </div>
+            <PhotoCardCarousel />
             </div>
 
             {/* Email card */}

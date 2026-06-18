@@ -1,5 +1,6 @@
 import { Music, Twitter, Mail, MessageCircle, Podcast } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { PhotoCardCarousel } from '@/app/components/PhotoCardCarousel';
 
 export function AboutPage() {
   return (
@@ -79,18 +80,15 @@ export function AboutPage() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-gray-900">홍길동</span>
+                    <span className="font-semibold text-gray-900">Eunji Jang</span>
                     <Twitter size={20} className="text-blue-400" />
                   </div>
-                  <span className="text-gray-500 text-sm">@honggildong</span>
+                  <span className="text-gray-500 text-sm">@eunjijang</span>
                 </div>
               </div>
               <p className="text-gray-700 mb-4">
-                cooking up • prev @company @another
+                prev <br/> @ibank<br/> @innisfree global<br/> @aestura<br/> @creatz<br/> @qed<br/>
               </p>
-              <button className="text-gray-500 text-sm hover:text-gray-700 transition-colors">
-                Read mid tweets →
-              </button>
             </div>
 
             {/* Music player card */}
@@ -139,17 +137,7 @@ export function AboutPage() {
               </div>
             </div>
 
-            {/* Photo card */}
-            <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl overflow-hidden sm:aspect-square relative">
-              <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&fit=crop"
-                alt="Beach photo"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute top-4 right-4 bg-white p-3 rounded-xl">
-                <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 via-red-400 to-pink-500 rounded-lg"></div>
-              </div>
-            </div>
+            <PhotoCardCarousel className="sm:aspect-square" />
 
             {/* Podcast card */}
             <div className="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-3xl p-5 sm:p-6 text-white sm:aspect-square">
