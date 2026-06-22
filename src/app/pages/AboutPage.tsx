@@ -1,6 +1,6 @@
-import { Music, Twitter, Mail, MessageCircle, Podcast } from 'lucide-react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { Mail } from 'lucide-react';
 import { PhotoCardCarousel } from '@/app/components/PhotoCardCarousel';
+import { MusicCard } from '@/app/components/MusicCard';
 
 export function AboutPage() {
   return (
@@ -15,58 +15,47 @@ export function AboutPage() {
               <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHERE I'M FROM</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  I was born and raised in Seoul, Korea. Growing up, I was always fascinated by technology and design. 
-                  My parents encouraged me to explore my creativity while staying grounded in practical skills. 
-                  There's something special about where you're from that shapes who you become.
+                  서울에서 9년, 전라남도 무안에서 9년을 보냈습니다. 대학 진학 이후 다시 서울로 올라와 현재까지 생활하며 커리어를 이어가고 있습니다. 다양한 환경에서의 경험은 새로운 관점을 배우고 적응하는 데 큰 밑거름이 되었습니다.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHAT I USED TO DO</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  When I was younger, I explored various creative outlets - from graphic design to video editing. 
-                  I worked on small freelance projects, built websites for local businesses, and learned the fundamentals 
-                  of user experience design through trial and error.
+                  뷰티, 스포츠 분야의 다양한 서비스를 개발했습니다. Aestura, Innisfree Global, Creatz, QED에서 백엔드 개발자로 일하며 글로벌 서비스와 관리자 시스템 구축, 실시간 기능 개발 등 다양한 실무 경험을 쌓았습니다.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHAT I DO NOW</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Today I'm a <span className="font-semibold">Full Stack Developer</span> designing and building 
-                  digital experiences. I specialize in React, TypeScript, and modern web technologies. 
-                  I focus on creating intuitive, performant applications that users love.
+                  Java와 Spring Boot를 중심으로 백엔드 시스템을 설계하고 개발합니다. 최근에는 개인 프로젝트를 통해 React와 TypeScript도 함께 활용하며 서비스 전체를 바라보는 개발을 지향하고 있습니다.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHERE I'M AT NOW</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Currently based in Seoul, South Korea. When I'm not coding, you can usually find me 
-                  exploring coffee shops, reading about design, or working on side projects that interest me.
+                  서울을 기반으로 활동하고 있습니다. 코딩 외에는 여행을 다니고, 카페를 돌아다니거나 관심 있는 사이드 프로젝트를 틈틈이 만드는 것을 좋아합니다.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHAT I'M LOOKING FOR</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Impactful, purposeful work with a diverse team of talented people. 
-                  I'm passionate about products that make a difference in people's lives.
+                  사용자에게 실질적인 가치를 전달하는 제품을 만드는 일에 관심이 많습니다. 기술 자체보다 문제 해결에 집중하며, 오래 사랑받는 서비스를 만드는 개발자가 되고 싶습니다.
                 </p>
               </div>
             </div>
 
             {/* Social icons */}
             <div className="flex gap-4 pt-6">
-              <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
-                <MessageCircle size={20} />
-              </button>
-              <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
+              <a
+                href="mailto:eden.jang.dev@gmail.com"
+                className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
+              >
                 <Mail size={20} />
-              </button>
-              <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
-                <Twitter size={20} />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -75,99 +64,53 @@ export function AboutPage() {
             {/* Twitter card */}
             <div className="bg-[#f7f7f9] rounded-3xl p-5 sm:p-6 sm:aspect-square">
               <div className="flex items-start gap-3 mb-4">
-                <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-sm font-semibold">HG</span>
+                <div className="w-10 h-10 rounded-full flex-shrink-0 overflow-hidden">
+                  <img src="/photo-cards/20260416_184219.jpg" alt="Eunji Jang" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-gray-900">Eunji Jang</span>
-                    <Twitter size={20} className="text-blue-400" />
                   </div>
                   <span className="text-gray-500 text-sm">@eunjijang</span>
                 </div>
               </div>
               <p className="text-gray-700 mb-4">
-                prev <br/> @ibank<br/> @innisfree global<br/> @aestura<br/> @creatz<br/> @qed<br/>
+                prev <br />
+                <a href="https://www.digitalworks.co.kr/dgMain.do" target="_blank" rel="noopener noreferrer" className="text-[#1D9BF0] hover:underline">@ibank</a>
+                <br />
+                <a href="https://us.innisfree.com" target="_blank" rel="noopener noreferrer" className="text-[#1D9BF0] hover:underline">@innisfree global</a>
+                <br />
+                <a href="https://www.aestura.com/web/main.do" target="_blank" rel="noopener noreferrer" className="text-[#1D9BF0] hover:underline">@aestura</a>
+                <br />
+                <a href="https://www.mycreatz.com/main/main" target="_blank" rel="noopener noreferrer" className="text-[#1D9BF0] hover:underline">@creatz</a>
+                <br />
+                <a href="https://qedgolf.com" target="_blank" rel="noopener noreferrer" className="text-[#1D9BF0] hover:underline">@qed</a>
+                <br />
               </p>
             </div>
 
-            {/* Music player card */}
-            <div className="bg-[#f7f7f9] rounded-3xl p-5 sm:p-6 sm:aspect-square flex flex-col">
-              <div className="flex items-start justify-between">
-                <div className="flex gap-4 items-start">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gray-200 rounded-2xl flex-shrink-0 overflow-hidden">
-                    <ImageWithFallback 
-                      src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=200&h=200&fit=crop"
-                      alt="Album cover"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm text-gray-500 mb-1">Now Playing</p>
-                    <p className="font-semibold text-gray-900">Nights</p>
-                    <p className="text-sm text-gray-500">Frank Ocean — Blonde</p>
-                  </div>
-                </div>
-                <Music size={22} className="text-red-500" />
-              </div>
-              <div className="mt-auto">
-                <div className="w-full h-2 bg-white rounded-full overflow-hidden mb-4">
-                  <div className="h-full w-2/3 bg-gray-900"></div>
-                </div>
-                <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
-                  <span>1:24</span>
-                  <span>4:02</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <button className="p-2 hover:bg-white rounded-full transition-colors" aria-label="Previous">
-                    ⏮
-                  </button>
-                  <a
-                    href="https://music.youtube.com/watch?v=Z3dM4zZK6ZQ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800 transition-colors"
-                  >
-                    Listen
-                  </a>
-                  <button className="p-2 hover:bg-white rounded-full transition-colors" aria-label="Next">
-                    ⏭
-                  </button>
-                </div>
-              </div>
-            </div>
+
+            {/* Seoul City card */}
+            <MusicCard
+              title="Seoul City"
+              artist="JENNIE"
+              album="Ruby"
+              artwork="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/4d/0e/974d0ed9-0c7b-59da-da0f-7a22ebfc1479/196872953367.jpg/400x400bb.jpg"
+              previewUrl="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/9f/b6/6e9fb64b-f604-3fcf-7df0-04ae8137a581/mzaf_10741472618186864871.plus.aac.p.m4a"
+              appleMusicUrl="https://music.apple.com/us/song/seoul-city/1800281936"
+            />
 
             <PhotoCardCarousel className="sm:aspect-square" />
 
-            {/* Podcast card */}
-            <div className="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-3xl p-5 sm:p-6 text-white sm:aspect-square">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="text-2xl font-bold mb-1">VISUAL</p>
-                  <p className="text-2xl font-bold text-orange-400">DEV.FM</p>
-                </div>
-                <Podcast size={32} className="text-purple-400" />
-              </div>
-              <p className="text-sm mb-1">Career as a Visual Developer?</p>
-              <p className="text-xs text-gray-300">The Visual Developer Podcast</p>
-              <div className="flex gap-3 items-center mt-4">
-                <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  🔊
-                </button>
-                <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  ⏮
-                </button>
-                <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  ▶️
-                </button>
-                <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  ⏭
-                </button>
-                <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  🔊
-                </button>
-              </div>
-            </div>
+            {/* Midnight Mirage card */}
+            <MusicCard
+              title="Midnight Mirage"
+              artist="RIIZE"
+              album="ODYSSEY"
+              artwork="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5b/9a/57/5b9a5770-9af1-96e1-3bf5-ba01faf63e9c/888735952104.jpg/400x400bb.jpg"
+              previewUrl="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/58/8c/37588c61-1c30-75d8-a8d3-93768bdcfe89/mzaf_8932435931072434023.plus.aac.p.m4a"
+              appleMusicUrl="https://music.apple.com/us/song/midnight-mirage/1813454039"
+            />
 
           </div>
         </div>

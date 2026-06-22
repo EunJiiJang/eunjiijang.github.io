@@ -52,7 +52,7 @@ export function Projects() {
                     <ImageWithFallback
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain p-16"
                     />
                   </div>
                 </div>

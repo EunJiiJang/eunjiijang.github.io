@@ -4,35 +4,50 @@ export type Experience = {
   company: string;
   role: string;
   description: string;
+  url: string;
+  color: string;
+  logo: string;
 };
 
 export const experiences: Experience[] = [
   {
     id: 1,
-    period: '2024 — Present',
-    company: 'Company A',
-    role: 'Frontend Developer',
-    description: 'React 기반 제품 UI 개발 및 디자인 시스템 구축',
+    period: '2023 — 2025',
+    company: 'QED',
+    role: 'Software Engineer',
+    description: '골프 서비스 프론트엔드 개발',
+    url: 'https://qedgolf.com',
+    color: '#1C1C1C',
+    logo: '/logos/qed logo.png',
   },
   {
     id: 2,
-    period: '2022 — 2024',
-    company: 'Company B',
-    role: 'Full Stack Developer',
-    description: '웹 서비스 전반 설계·개발 및 운영 자동화',
+    period: '2023 — 2025',
+    company: 'Creatz',
+    role: 'Software Engineer',
+    description: '스포츠 시뮬레이터 서비스 개발',
+    url: 'https://www.mycreatz.com/main/main',
+    color: '#1A3A6E',
+    logo: '/logos/creatz.png',
   },
   {
     id: 3,
-    period: '2021 — 2022',
-    company: 'Company C',
+    period: '2019 — 2020',
+    company: 'Aestura',
     role: 'Software Engineer',
-    description: '사내 도구 개발과 레거시 시스템 개선',
+    description: '뷰티 이커머스 프론트엔드 개발',
+    url: 'https://www.aestura.com/web/main.do',
+    color: '#005BAC',
+    logo: '/logos/aestura.png',
   },
   {
     id: 4,
     period: '2020 — 2021',
-    company: 'Company D',
-    role: 'Junior Developer',
-    description: '프론트엔드 기능 구현 및 협업 프로세스 정립',
+    company: 'Innisfree Global',
+    role: 'Software Engineer',
+    description: '글로벌 뷰티 브랜드 웹 개발',
+    url: 'https://us.innisfree.com',
+    color: '#00B466',
+    logo: '/logos/Innisfree-Logo.png',
   },
 ];
