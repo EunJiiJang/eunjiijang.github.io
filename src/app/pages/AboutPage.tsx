@@ -13,13 +13,6 @@ export function AboutPage() {
             <div className="h-px bg-gray-200 mt-6 mb-6"></div>
             <div className="space-y-6 mt-8">
               <div>
-                <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHERE I'M FROM</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  서울에서 9년, 전라남도 무안에서 9년을 보냈습니다. 대학 진학 이후 다시 서울로 올라와 현재까지 생활하며 커리어를 이어가고 있습니다. 다양한 환경에서의 경험은 새로운 관점을 배우고 적응하는 데 큰 밑거름이 되었습니다.
-                </p>
-              </div>
-
-              <div>
                 <h2 className="text-xs uppercase tracking-wider text-gray-400 mb-3">WHAT I USED TO DO</h2>
                 <p className="text-gray-700 leading-relaxed">
                   뷰티, 스포츠 분야의 다양한 서비스를 개발했습니다. Aestura, Innisfree Global, Creatz, QED에서 백엔드 개발자로 일하며 글로벌 서비스와 관리자 시스템 구축, 실시간 기능 개발 등 다양한 실무 경험을 쌓았습니다.
