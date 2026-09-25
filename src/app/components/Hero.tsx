@@ -9,36 +9,54 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-4 lg:items-stretch">
           {/* Left side - Main intro */}
           <div className="h-full">
-            <div className="bg-[#f7f7f9] rounded-[32px] p-6 sm:p-8 h-full lg:min-h-[672px]">
-              <h1 className="text-[26px] sm:text-[31px] leading-[1.25] font-medium tracking-[-0.025em] text-[#222]">
+            <div className="bg-[#f7f7f9] rounded-[32px] p-6 sm:p-8 h-full lg:min-h-[672px] flex flex-col">
+              <h1 className="text-[28px] sm:text-[34px] leading-[1.2] font-medium tracking-[-0.03em] text-[#222]">
                 <span><span className="text-[#949494]">My name is</span> Eunji Jang</span>
               </h1>
               <div className="h-px bg-black/[0.06] mt-6 mb-6"></div>
               
-              <div className="space-y-3 text-[#707070] text-[16px] sm:text-[17px] leading-[1.5] tracking-[-0.015em]">
-                  <p>무언가를 어떻게 만들지 고민하기 전에,<br/>
-                  왜 그것이 필요한지부터 질문한다.</p>
+              <div className="flex flex-1 flex-col tracking-[-0.02em]">
+                <div className="space-y-5 text-[#606060] text-[18px] sm:text-[20px] leading-[1.55]">
+                  <p>
+                    저는 구현보다 문제를 먼저 봅니다.<br />
+                    무엇을 만들 수 있는지보다 왜 만들어야 하는지 질문합니다.
+                  </p>
 
-                  <p>기술은 목적이 아니라 수단이라고 믿는다.</p>
+                  <p>
+                    복잡한 요구사항을 단순하고 지속 가능한 구조로 풀어내고,<br />
+                    사용자의 시간과 운영의 부담을 줄이는 방법을 고민합니다.
+                  </p>
 
-                  <p>사용자의 시간을 아끼고,<br/>
-                  운영의 복잡성을 줄이며,<br/>
-                  서비스가 성장해도 유지보수 가능한 구조를 만드는 것.</p>
+                  <p>
+                    좋은 개발은 더 많은 기능을 만드는 일이 아니라,<br />
+                    꼭 필요한 문제를 정확히 해결하는 일이라고 믿습니다.
+                  </p>
 
-                  <p>그런 가치를 만드는 개발자가 되고자 한다.</p>
+                  <p>
+                    사용자와 운영자의 흐름을 함께 살피고,<br />
+                    서비스가 성장해도 유연하게 변화할 수 있는 제품을 만듭니다.
+                  </p>
+                </div>
 
-                  <p>I start with the problem, not the solution.</p>
+                <div className="mt-7 border-t border-black/[0.06] pt-6 space-y-3 text-[#8a8a8a] text-[16px] sm:text-[18px] leading-[1.55]">
+                  <p>
+                    I begin with why, then find the simplest way forward.
+                  </p>
+                  <p>
+                    I build thoughtful, sustainable products that save time,<br className="hidden sm:block" />
+                    reduce friction, and evolve gracefully as they grow.
+                  </p>
+                </div>
 
-                  <p>Before thinking about how to build something,<br/>
-                  I ask why it needs to exist.</p>
-
-                  <p>Technology is a means, not an end.</p>
-
-                  <p>I care about creating software that saves people time,<br/>
-                  reduces operational complexity,<br/>
-                  and remains maintainable as it grows.</p>
-
-                  <p>That's the kind of impact I strive to make as a developer.</p>
+                <div className="mt-auto pt-8 flex items-end justify-between gap-4">
+                  <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#a5a5a5]">
+                    My principle
+                  </p>
+                  <p className="text-right text-[20px] sm:text-[23px] leading-[1.2] font-medium tracking-[-0.035em] text-[#565656]">
+                    Less complexity.<br />
+                    More clarity.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
