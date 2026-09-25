@@ -51,7 +51,7 @@ export function PhotoCardCarousel({ photos = photoCards, className }: PhotoCardC
   return (
     <div
       className={cn(
-        'bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl overflow-hidden aspect-square relative',
+        'bg-gradient-to-br from-blue-400 to-blue-600 rounded-[32px] overflow-hidden aspect-square relative',
         className,
       )}
     >

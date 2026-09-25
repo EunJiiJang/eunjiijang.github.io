@@ -6,7 +6,7 @@ export function Experience() {
   const [logoFailed, setLogoFailed] = useState<Set<number>>(new Set());
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
       {experiences.map((experience) => {
         const isHovered = hovered === experience.id;
         const logoMissing = logoFailed.has(experience.id);
@@ -18,7 +18,7 @@ export function Experience() {
             rel="noopener noreferrer"
             onMouseEnter={() => setHovered(experience.id)}
             onMouseLeave={() => setHovered(null)}
-            className="rounded-3xl p-4 sm:p-6 flex flex-col justify-between aspect-square transition-colors duration-300"
+            className="rounded-[32px] p-4 sm:p-6 flex flex-col justify-between aspect-square transition-[background-color,transform] duration-300 hover:-translate-y-0.5"
             style={{ backgroundColor: isHovered ? experience.color : '#f7f7f9' }}
           >
             <p

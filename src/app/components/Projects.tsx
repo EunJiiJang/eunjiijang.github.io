@@ -9,12 +9,12 @@ export function Projects() {
 
   return (
     <section id="projects" className="pt-0 pb-16 sm:pb-20 bg-white">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="max-w-[1400px] mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project) => (
             <article
               key={project.id}
-              className="bg-[#f7f7f9] rounded-3xl overflow-hidden cursor-pointer"
+              className="bg-[#f7f7f9] rounded-[32px] overflow-hidden cursor-pointer transition-transform duration-300 hover:-translate-y-0.5"
               role="button"
               tabIndex={0}
               onClick={() => navigate(`/work/${project.slug}`)}

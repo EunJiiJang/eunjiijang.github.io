@@ -4,18 +4,18 @@ import { PhotoCardCarousel } from '@/app/components/PhotoCardCarousel';
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen bg-white pt-[150px] pb-16 sm:pb-20">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-5">
-        <div className="grid lg:grid-cols-2 gap-5 lg:items-stretch">
+    <section id="home" className="min-h-screen bg-white pt-[142px] pb-16 sm:pb-20">
+      <div className="max-w-[1400px] mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-4 lg:items-stretch">
           {/* Left side - Main intro */}
           <div className="h-full">
-            <div className="bg-[#f7f7f9] rounded-3xl p-6 sm:p-8 lg:p-12 h-full">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900">
-                <span className="text-3xl"> <span className="text-gray-500">My name is</span> Eunji Jang</span>
+            <div className="bg-[#f7f7f9] rounded-[32px] p-6 sm:p-8 h-full lg:min-h-[672px]">
+              <h1 className="text-[26px] sm:text-[31px] leading-[1.25] font-medium tracking-[-0.025em] text-[#222]">
+                <span><span className="text-[#949494]">My name is</span> Eunji Jang</span>
               </h1>
-              <div className="h-px bg-gray-200 mt-6 mb-6"></div>
+              <div className="h-px bg-black/[0.06] mt-6 mb-6"></div>
               
-              <div className="space-y-4 text-gray-500 text-lg">
+              <div className="space-y-3 text-[#707070] text-[16px] sm:text-[17px] leading-[1.5] tracking-[-0.015em]">
                   <p>무언가를 어떻게 만들지 고민하기 전에,<br/>
                   왜 그것이 필요한지부터 질문한다.</p>
 
@@ -47,7 +47,7 @@ export function Hero() {
           <div className="flex flex-col gap-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 shrink-0">
             {/* Twitter card */}
-            <div className="bg-[#f7f7f9] rounded-3xl p-5 sm:p-6 aspect-square">
+            <div className="bg-[#f7f7f9] rounded-[32px] p-5 sm:p-6 aspect-square">
               <div className="flex items-start gap-3 mb-4">
                 <div className="w-10 h-10 rounded-full flex-shrink-0 overflow-hidden">
                   <img src="/photo-cards/20260416_184219.jpg" alt="Eunji Jang" className="w-full h-full object-cover" />
@@ -78,8 +78,8 @@ export function Hero() {
             </div>
 
             {/* Email card */}
-            <div className="bg-[#f7f7f9] rounded-3xl p-4 sm:p-6 flex-1 flex flex-col">
-              <div className="bg-white rounded-2xl shadow-sm p-5 sm:p-6">
+            <div className="bg-[#f7f7f9] rounded-[32px] p-4 sm:p-6 flex-1 flex flex-col">
+              <div className="bg-white rounded-2xl border border-black/[0.04] shadow-[0_8px_22px_rgba(0,0,0,0.07)] p-5 sm:p-6">
                 <div className="pb-3 border-b border-gray-200">
                   <p className="text-sm">
                     <span className="text-gray-400">To:</span>{' '}
